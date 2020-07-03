@@ -44,15 +44,18 @@ int main()
 
 	getline(cin, line);
 
-	string last = last_word(line);
-	swap_letters(last);
-
 	int n;
 	string* words = split(line, n);
+
+	string last = words[n - 1];
 
 	for (int i = 0; i < n; i++)
 	{
 		swap_letters(words[i]);
+	}
+	
+	for (int i = 0; i < n; i++)
+	{
 		if (words[i] != last)
 		{
 			cout << words[i] << "\n";
