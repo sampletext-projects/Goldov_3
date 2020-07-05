@@ -43,6 +43,8 @@ int main()
 
 	string last = words[n - 1];
 
+	swap_letters(last);
+
 	for (int i = 0; i < n; i++)
 	{
 		swap_letters(words[i]);
