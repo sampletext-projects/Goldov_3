@@ -3,12 +3,6 @@
 
 using namespace std;
 
-string last_word(string& line)
-{
-	int pos = line.rfind(' ');
-	return line.substr(pos + 1);
-}
-
 void swap_letters(string& word)
 {
 	swap(word[word.length() - 1], word[0]);
@@ -53,7 +47,7 @@ int main()
 	{
 		swap_letters(words[i]);
 	}
-	
+
 	for (int i = 0; i < n; i++)
 	{
 		if (words[i] != last)
